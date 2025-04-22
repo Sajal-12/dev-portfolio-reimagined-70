@@ -11,23 +11,20 @@ const Index = () => {
     <div className="max-w-4xl mx-auto p-4 md:p-6 font-serif">
       {/* Header/Name Section */}
       <header className="text-center mb-8">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-2">Shreyansh Kumar Srivastava</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-2">SAJAL SWAPNIL</h1>
+        <div className="text-sm mb-2">Basant Bihar, Begusarai, 851101 | 7773876622</div>
         <div className="flex flex-wrap justify-center gap-4 text-sm">
-          <a href="tel:+917985737698" className="flex items-center gap-1 hover:text-primary transition-colors">
-            <Phone size={16} className="inline-block" />
-            <span>(+91) 7985737698</span>
-          </a>
-          <a href="mailto:Shreyansh.srivastava2812@gmail.com" className="flex items-center gap-1 hover:text-primary transition-colors">
+          <a href="mailto:sajalvictorious3@gmail.com" className="flex items-center gap-1 hover:text-primary transition-colors">
             <Mail size={16} className="inline-block" />
-            <span>Shreyansh.srivastava2812@gmail.com</span>
+            <span>sajalvictorious3@gmail.com</span>
           </a>
           <a href="https://linkedin.com/in/Shreyansh-Srivastava" className="flex items-center gap-1 hover:text-primary transition-colors">
             <Linkedin size={16} className="inline-block" />
-            <span>Shreyansh-Srivastava</span>
+            <span>LinkedIn</span>
           </a>
           <a href="https://github.com/Sajal-12" className="flex items-center gap-1 hover:text-primary transition-colors">
             <Github size={16} className="inline-block" />
-            <span>Sajal-12</span>
+            <span>GitHub</span>
           </a>
         </div>
       </header>
@@ -42,12 +39,25 @@ const Index = () => {
         <Card className="mb-4">
           <CardContent className="p-4">
             <div className="flex flex-col sm:flex-row justify-between mb-1">
-              <div className="font-bold">Chandigarh University</div>
-              <div className="italic">Mohali, Punjab</div>
+              <div className="font-bold">Chandigarh University, Gharuan</div>
+              <div className="italic">August 2020 – June 2024</div>
             </div>
             <div className="flex flex-col sm:flex-row justify-between text-sm">
-              <div><i>B.E. Computer Science and Engineering | CGPA: 7.99</i></div>
-              <div>August 2020 – June 2024</div>
+              <div><i>B.E. Computer Science Engineering</i></div>
+              <div>CGPA: 7.7</div>
+            </div>
+          </CardContent>
+        </Card>
+        
+        <Card className="mb-4">
+          <CardContent className="p-4">
+            <div className="flex flex-col sm:flex-row justify-between mb-1">
+              <div className="font-bold">ST JOSEPH PUBLIC SCHOOL, Begusarai</div>
+              <div className="italic">2018 - 2019</div>
+            </div>
+            <div className="flex flex-col sm:flex-row justify-between text-sm">
+              <div><i>Intermediate (CBSE)</i></div>
+              <div>Percentage: 82%</div>
             </div>
           </CardContent>
         </Card>
@@ -55,12 +65,12 @@ const Index = () => {
         <Card>
           <CardContent className="p-4">
             <div className="flex flex-col sm:flex-row justify-between mb-1">
-              <div className="font-bold">Academic Global School</div>
-              <div className="italic">Gorakhpur, Uttar Pradesh</div>
+              <div className="font-bold">DAV PUBLIC SCHOOL, Begusarai</div>
+              <div className="italic">2016 - 2017</div>
             </div>
             <div className="flex flex-col sm:flex-row justify-between text-sm">
-              <div><i>Secondary Education</i></div>
-              <div>2018 – 2020</div>
+              <div><i>Matriculation (CBSE)</i></div>
+              <div>Percentage: 76%</div>
             </div>
           </CardContent>
         </Card>
@@ -73,15 +83,80 @@ const Index = () => {
           <Separator className="flex-grow ml-3" />
         </div>
         
-        {/* SmartJobber Project */}
+        {/* Pathfinding Visualizer Project */}
         <Card className="mb-4">
           <CardContent className="p-4">
             <div className="flex flex-wrap items-center gap-2 mb-2">
-              <h3 className="font-bold">SMART JOBBER</h3>
+              <h3 className="font-bold">PATHFINDING VISUALIZER</h3>
+              <div className="text-xs px-2 py-1 bg-muted rounded-full">React.js</div>
+              <div className="text-xs px-2 py-1 bg-muted rounded-full">JavaScript</div>
+              <div className="text-xs px-2 py-1 bg-muted rounded-full">CSS</div>
+              <div className="text-xs px-2 py-1 bg-muted rounded-full">Data Structures & Algorithms</div>
+              <a 
+                href="https://github.com/Sajal-12/PathfindingVisualizer" 
+                className="flex items-center hover:text-primary transition-colors"
+                aria-label="GitHub repository"
+              >
+                <Github size={16} className="inline-block" />
+              </a>
+              <a 
+                href="https://sajal-12.github.io/PathfindingVisualizer/" 
+                className="flex items-center hover:text-primary transition-colors"
+                aria-label="Live Demo"
+              >
+                <ExternalLink size={16} className="inline-block" />
+              </a>
+            </div>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Developed an <span className="font-bold">interactive web application</span> to visualize various pathfinding algorithms including <span className="font-bold">Dijkstra's, A*, BFS, and DFS</span> with real-time visualization capabilities.</li>
+              <li>Implemented a responsive grid system with <span className="font-bold">customizable animation speed</span> and obstacle placement for enhanced user experience.</li>
+              <li>Utilized <span className="font-bold">React.js</span> for efficient state management and component-based architecture, resulting in a smooth and responsive user interface.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        {/* Gericht Restaurant Project */}
+        <Card className="mb-4">
+          <CardContent className="p-4">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              <h3 className="font-bold">GERICHT RESTAURANT</h3>
               <div className="text-xs px-2 py-1 bg-muted rounded-full">React.js</div>
               <div className="text-xs px-2 py-1 bg-muted rounded-full">Node.js</div>
+              <div className="text-xs px-2 py-1 bg-muted rounded-full">Express.js</div>
+              <div className="text-xs px-2 py-1 bg-muted rounded-full">MongoDB</div>
+              <div className="text-xs px-2 py-1 bg-muted rounded-full">Tailwind CSS</div>
+              <a 
+                href="https://github.com/Sajal-12/Gericht-Restaurant" 
+                className="flex items-center hover:text-primary transition-colors"
+                aria-label="GitHub repository"
+              >
+                <Github size={16} className="inline-block" />
+              </a>
+              <a 
+                href="https://lucent-kitten-5ba2da.netlify.app/" 
+                className="flex items-center hover:text-primary transition-colors"
+                aria-label="Live Demo"
+              >
+                <ExternalLink size={16} className="inline-block" />
+              </a>
+            </div>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>Built a <span className="font-bold">full-stack MERN application</span> for a restaurant featuring an elegant UI with <span className="font-bold">responsive design</span> across all device sizes.</li>
+              <li>Implemented <span className="font-bold">RESTful API</span> endpoints for menu items, reservations, and user authentication with <span className="font-bold">JWT tokens</span>.</li>
+              <li>Utilized <span className="font-bold">MongoDB</span> for database operations and <span className="font-bold">Express.js</span> for server-side routing with optimized performance.</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        {/* SmartJobber Project */}
+        <Card>
+          <CardContent className="p-4">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              <h3 className="font-bold">SMARTJOBBER</h3>
+              <div className="text-xs px-2 py-1 bg-muted rounded-full">React.js</div>
               <div className="text-xs px-2 py-1 bg-muted rounded-full">Supabase</div>
-              <div className="text-xs px-2 py-1 bg-muted rounded-full">GraphQL</div>
+              <div className="text-xs px-2 py-1 bg-muted rounded-full">Tailwind CSS</div>
+              <div className="text-xs px-2 py-1 bg-muted rounded-full">JavaScript</div>
               <a 
                 href="https://github.com/Sajal-12/smartjobber" 
                 className="flex items-center hover:text-primary transition-colors"
@@ -98,35 +173,9 @@ const Index = () => {
               </a>
             </div>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Built a <span className="font-bold">job matching platform</span> with <span className="font-bold">ML-powered recommendation engine</span> analyzing resume content to suggest optimal job matches.</li>
-              <li>Implemented <span className="font-bold">real-time updates</span> with <span className="font-bold">Supabase</span> for instant notifications on application status.</li>
-              <li>Designed responsive UI with <span className="font-bold">React</span> and <span className="font-bold">TailwindCSS</span> for seamless cross-device experience.</li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        {/* Blog Website Project */}
-        <Card>
-          <CardContent className="p-4">
-            <div className="flex flex-wrap items-center gap-2 mb-2">
-              <h3 className="font-bold">BLOG-WEBSITE</h3>
-              <div className="text-xs px-2 py-1 bg-muted rounded-full">React.js</div>
-              <div className="text-xs px-2 py-1 bg-muted rounded-full">Tailwind CSS</div>
-              <div className="text-xs px-2 py-1 bg-muted rounded-full">Node.js</div>
-              <div className="text-xs px-2 py-1 bg-muted rounded-full">MongoDB</div>
-              <div className="text-xs px-2 py-1 bg-muted rounded-full">Firebase</div>
-              <a 
-                href="https://github.com/Sajal-12/Blog-Website" 
-                className="flex items-center hover:text-primary transition-colors"
-                aria-label="GitHub repository"
-              >
-                <Github size={16} className="inline-block" />
-              </a>
-            </div>
-            <ul className="list-disc pl-6 space-y-1">
-              <li>Developed a full-stack blog platform with <span className="font-bold">Firebase authentication</span> and social features.</li>
-              <li>Built an <span className="font-bold">Admin Dashboard</span> with <span className="font-bold">activity tracking</span> and content management.</li>
-              <li>Implemented <span className="font-bold">JWT authentication</span> and <span className="font-bold">Redux Toolkit</span> for state management.</li>
+              <li>Developed a <span className="font-bold">job application tracking system</span> with <span className="font-bold">Supabase</span> for backend services including authentication and database operations.</li>
+              <li>Created an intuitive dashboard for users to <span className="font-bold">track application status</span>, set reminders, and organize job search activities.</li>
+              <li>Implemented <span className="font-bold">real-time notifications</span> and data synchronization using <span className="font-bold">Supabase's realtime subscriptions</span> for instant updates.</li>
             </ul>
           </CardContent>
         </Card>
@@ -141,57 +190,35 @@ const Index = () => {
         
         <Card>
           <CardContent className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-bold">Programming Languages</span>
-                    <span className="text-sm">C++, Java, JavaScript</span>
-                  </div>
-                  <Progress value={90} className="h-2" />
-                </div>
-                
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-bold">Frameworks</span>
-                    <span className="text-sm">ReactJS, Spring Boot</span>
-                  </div>
-                  <Progress value={85} className="h-2" />
-                </div>
-                
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-bold">Version Control</span>
-                    <span className="text-sm">Git, GitHub</span>
-                  </div>
-                  <Progress value={92} className="h-2" />
-                </div>
+            <div className="space-y-4">
+              <div>
+                <div className="font-bold mb-2">Programming Languages:</div>
+                <div className="text-sm mb-1">JavaScript, TypeScript, Java (Core, Advanced), Solidity, HTML, CSS</div>
+                <Progress value={90} className="h-2" />
               </div>
               
-              <div className="space-y-2">
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-bold">Cloud & Databases</span>
-                    <span className="text-sm">Cloud SQL, Snowflake, DynamoDB</span>
-                  </div>
-                  <Progress value={80} className="h-2" />
-                </div>
-                
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-bold">Testing & Code Quality</span>
-                    <span className="text-sm">Postman, JUnit, SonarQube</span>
-                  </div>
-                  <Progress value={75} className="h-2" />
-                </div>
-                
-                <div>
-                  <div className="flex justify-between mb-1">
-                    <span className="font-bold">Relevant Coursework</span>
-                    <span className="text-sm">DSA, OOP, DBMS</span>
-                  </div>
-                  <Progress value={88} className="h-2" />
-                </div>
+              <div>
+                <div className="font-bold mb-2">Frameworks & Libraries:</div>
+                <div className="text-sm mb-1">React.js, Node.js, Express.js, MongoDB, Next.js, Tailwind CSS, Material UI</div>
+                <Progress value={85} className="h-2" />
+              </div>
+              
+              <div>
+                <div className="font-bold mb-2">Development Tools:</div>
+                <div className="text-sm mb-1">Git, GitHub, VS Code, Webpack, npm, Postman</div>
+                <Progress value={92} className="h-2" />
+              </div>
+              
+              <div>
+                <div className="font-bold mb-2">Technologies:</div>
+                <div className="text-sm mb-1">RESTful APIs, GraphQL, Blockchain, Web Development, Google Cloud (Basics), Responsive Design</div>
+                <Progress value={80} className="h-2" />
+              </div>
+              
+              <div>
+                <div className="font-bold mb-2">Relevant Coursework:</div>
+                <div className="text-sm mb-1">Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems</div>
+                <Progress value={88} className="h-2" />
               </div>
             </div>
           </CardContent>
@@ -199,7 +226,7 @@ const Index = () => {
       </section>
 
       {/* Achievements Section */}
-      <section>
+      <section className="mb-8">
         <div className="flex items-center mb-4">
           <h2 className="text-xl font-bold">ACHIEVEMENTS</h2>
           <Separator className="flex-grow ml-3" />
@@ -207,11 +234,31 @@ const Index = () => {
         
         <Card>
           <CardContent className="p-4">
-            <ul className="space-y-2">
-              <li>Solved <span className="font-bold">1000+ DSA problems</span> across platforms like <span className="font-bold">CodeChef</span>, <span className="font-bold">LeetCode</span>, <span className="font-bold">GFG</span>.</li>
-              <li>Achieved <span className="font-bold">Snowflake SnowPro Core Certification</span> with expertise in cloud data warehousing.</li>
-              <li>Competed in <span className="font-bold">35+ coding contests</span>, achieving a <span className="font-bold">global rank of 22nd</span> in the April Long Challenge.</li>
-              <li>Reached a <span className="font-bold">maximum rating of 1611</span> on CodeChef and <span className="font-bold">1685 on LeetCode (top 15% user)</span>.</li>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Open Source Contributor with <span className="font-bold">250+ Contributions</span> and <span className="font-bold">70+ Repositories</span> on GitHub.</li>
+              <li>Technical Content Creator specializing in Web Development and AI topics on Medium.</li>
+              <li>Technical Team Lead and Student Coordinator at <span className="font-bold">Hackoverflow Society</span>.</li>
+              <li>Secured Gold Medal in Interstate <span className="font-bold">Chess Championship</span> (2019).</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Certifications Section */}
+      <section className="mb-8">
+        <div className="flex items-center mb-4">
+          <h2 className="text-xl font-bold">CERTIFICATIONS</h2>
+          <Separator className="flex-grow ml-3" />
+        </div>
+        
+        <Card>
+          <CardContent className="p-4">
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Full Stack Web Development Certification - Udemy</li>
+              <li>Google Cloud Platform Fundamentals Certification</li>
+              <li>Enterprise Blockchain Development Certification - SimpliLearn</li>
+              <li>AI Tools and Prompt Engineering Workshop Certification - beX10</li>
+              <li><a href="https://www.cloudskillsboost.google/profile/badges" className="text-blue-600 hover:underline">Google Cloud Skills Badges</a></li>
             </ul>
           </CardContent>
         </Card>
