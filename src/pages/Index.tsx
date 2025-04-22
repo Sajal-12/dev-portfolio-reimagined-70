@@ -1,28 +1,33 @@
 
 import React from "react";
-import { Github, Mail, Phone, Linkedin, ExternalLink } from "lucide-react";
+import { Github, Mail, Phone, Linkedin, ExternalLink, Download } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 
 const Index = () => {
+  // Handle PDF download
+  const handleDownload = () => {
+    window.print();
+  };
+
   return (
-    <div className="max-w-4xl mx-auto p-4 md:p-6 font-serif">
+    <div className="max-w-4xl mx-auto p-4 md:p-6 font-serif a4-page">
       {/* Header/Name Section */}
       <header className="text-center mb-8">
         <h1 className="text-4xl sm:text-5xl font-bold mb-2">SAJAL SWAPNIL</h1>
         <div className="text-sm mb-2">Basant Bihar, Begusarai, 851101 | 7773876622</div>
         <div className="flex flex-wrap justify-center gap-4 text-sm">
-          <a href="mailto:sajalvictorious3@gmail.com" className="flex items-center gap-1 hover:text-primary transition-colors">
+          <a href="mailto:sajalvictorious3@gmail.com" className="flex items-center gap-1 hover:text-primary transition-colors underline">
             <Mail size={16} className="inline-block" />
             <span>sajalvictorious3@gmail.com</span>
           </a>
-          <a href="https://linkedin.com/in/Shreyansh-Srivastava" className="flex items-center gap-1 hover:text-primary transition-colors">
+          <a href="https://linkedin.com/in/Shreyansh-Srivastava" className="flex items-center gap-1 hover:text-primary transition-colors underline">
             <Linkedin size={16} className="inline-block" />
             <span>LinkedIn</span>
           </a>
-          <a href="https://github.com/Sajal-12" className="flex items-center gap-1 hover:text-primary transition-colors">
+          <a href="https://github.com/Sajal-12" className="flex items-center gap-1 hover:text-primary transition-colors underline">
             <Github size={16} className="inline-block" />
             <span>GitHub</span>
           </a>
@@ -254,23 +259,24 @@ const Index = () => {
         <Card>
           <CardContent className="p-4">
             <ul className="list-disc pl-6 space-y-2">
+              <li>AI Tools and Prompt Engineering Workshop Certification - beX10</li>
               <li>Full Stack Web Development Certification - Udemy</li>
               <li>Google Cloud Platform Fundamentals Certification</li>
               <li>Enterprise Blockchain Development Certification - SimpliLearn</li>
-              <li>AI Tools and Prompt Engineering Workshop Certification - beX10</li>
-              <li><a href="https://www.cloudskillsboost.google/profile/badges" className="text-blue-600 hover:underline">Google Cloud Skills Badges</a></li>
+              <li>Google Cloud Skills Badges - 45+ badges completed</li>
             </ul>
           </CardContent>
         </Card>
       </section>
 
-      {/* Print Button */}
+      {/* Download Button */}
       <div className="mt-6 text-center">
         <Button 
-          onClick={() => window.print()} 
-          className="print:hidden"
+          onClick={handleDownload} 
+          className="print:hidden flex items-center gap-2"
         >
-          Print Resume
+          <Download size={16} />
+          Download Resume (A4)
         </Button>
       </div>
     </div>

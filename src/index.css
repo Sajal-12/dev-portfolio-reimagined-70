@@ -84,8 +84,20 @@
   }
 }
 
+/* A4 Page Size */
+.a4-page {
+  width: 100%;
+  max-width: 794px;  /* A4 width in pixels */
+  margin: 0 auto;
+}
+
 /* Print styles to ensure the resume looks good when printed */
 @media print {
+  @page {
+    size: A4;
+    margin: 0.5cm;
+  }
+  
   body {
     margin: 0;
     padding: 0;
