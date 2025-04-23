@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Github, Mail, Linkedin } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
@@ -6,14 +5,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { downloadNodeAsPdf } from "@/lib/download-pdf";
 
 const Index = () => {
-  // Handler for PDF download button
-  const handleDownload = () => {
-    downloadNodeAsPdf(".a4-page", "Sajal_Swapnil_Resume.pdf");
-  };
-
   return (
     <div
-      className="relative font-serif a4-page border-2 border-gray-300 shadow-lg bg-white print:bg-white"
+      className="relative font-serif a4-page shadow-lg bg-white print:bg-white"
       style={{
         width: "595px",
         minHeight: "842px",
@@ -23,25 +17,12 @@ const Index = () => {
         borderRadius: "12px",
       }}
     >
-      {/* Download Button (NO icon, just text) */}
-      <button
-        aria-label="Download PDF"
-        onClick={handleDownload}
-        className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded text-xs font-semibold shadow hover:bg-primary/80 transition print:hidden border border-primary"
-        style={{
-          letterSpacing: "0.02em",
-        }}
-      >
-        Download PDF
-      </button>
-
       {/* Header/Name Section */}
       <header className="text-center mb-4 mt-2">
         <h1 className="text-3xl font-bold mb-1 tracking-wide text-gray-900" style={{ letterSpacing: "0.04em" }}>SAJAL SWAPNIL</h1>
         <div className="text-xs mb-1 text-gray-700 font-medium tracking-wide">
           Basant Bihar, Begusarai, 851101 | 7773876622
         </div>
-        {/* Contact Row: Tightly aligned, resized logos/links, no extra underline */}
         <div className="flex justify-center gap-2 items-center flex-wrap text-xs mt-1 mb-1">
           <a
             href="mailto:sajalvictorious3@gmail.com"

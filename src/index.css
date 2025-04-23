@@ -93,7 +93,8 @@
   max-width: 595px !important;
   background: #fff;
   border-radius: 12px;
-  border: 2.8px solid #bbb;
+  /* Remove or minimize the border for a cleaner A4 look */
+  border: none !important;
   box-shadow: 0 0 8px #e2e8f0;
   margin: 40px auto !important;
   box-sizing: border-box;
