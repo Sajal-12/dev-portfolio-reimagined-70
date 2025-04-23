@@ -1,12 +1,28 @@
 
 import React from "react";
-import { Github, Mail, Linkedin, ExternalLink } from "lucide-react";
+import { Github, Mail, Linkedin, ExternalLink, Download } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent } from "@/components/ui/card";
+import { downloadNodeAsPdf } from "@/lib/download-pdf";
 
 const Index = () => {
+  // Handler for PDF download button
+  const handleDownload = () => {
+    downloadNodeAsPdf(".a4-page", "Sajal_Swapnil_Resume.pdf");
+  };
+
   return (
-    <div className="max-w-4xl mx-auto p-4 md:p-6 font-serif a4-page">
+    <div className="relative max-w-4xl mx-auto p-4 md:p-6 font-serif a4-page">
+      {/* Download Button */}
+      <button
+        aria-label="Download PDF"
+        className="absolute top-3 right-3 bg-primary text-primary-foreground px-3 py-1 rounded flex items-center gap-1 text-xs shadow transition hover:bg-primary/80 print:hidden"
+        onClick={handleDownload}
+      >
+        <Download size={16} />
+        Download PDF
+      </button>
+
       {/* Header/Name Section */}
       <header className="text-center mb-6">
         <h1 className="text-4xl sm:text-5xl font-bold mb-2">SAJAL SWAPNIL</h1>
@@ -19,27 +35,30 @@ const Index = () => {
             className="flex items-center gap-1 hover:text-primary transition-colors underline"
             target="_blank"
             rel="noopener noreferrer"
+            style={{ textDecoration: "underline" }}
           >
             <Mail size={16} className="inline-block" />
-            <span>sajalvictorious3@gmail.com</span>
+            <span style={{ textDecoration: "none" }}>sajalvictorious3@gmail.com</span>
           </a>
           <a
             href="https://www.linkedin.com/in/sajal-swapnil-a93a741ba/"
             className="flex items-center gap-1 hover:text-primary transition-colors underline"
             target="_blank"
             rel="noopener noreferrer"
+            style={{ textDecoration: "underline" }}
           >
             <Linkedin size={16} className="inline-block" />
-            <span>LinkedIn</span>
+            <span style={{ textDecoration: "none" }}>LinkedIn</span>
           </a>
           <a
             href="https://github.com/Sajal-12"
             className="flex items-center gap-1 hover:text-primary transition-colors underline"
             target="_blank"
             rel="noopener noreferrer"
+            style={{ textDecoration: "underline" }}
           >
             <Github size={16} className="inline-block" />
-            <span>GitHub</span>
+            <span style={{ textDecoration: "none" }}>GitHub</span>
           </a>
         </div>
       </header>
@@ -362,3 +381,4 @@ const Index = () => {
 };
 
 export default Index;
+
